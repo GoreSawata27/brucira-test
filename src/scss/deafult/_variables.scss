@@ -2,20 +2,24 @@
 :root {
   //font style
   --font-style: "Open Sans", sans-serif;
-  --font-style-Everett: "Signika", sans-serif;
+  --font-style-Everett: "Everett Regular";
 
   // Theme Color
-
   --color-primary: #ffffff;
-  // --color-secondary: #ef001c;
 
   //text color
   --text-primary: #111010;
   --text-secondary: #ef001c;
+
+  //width
+  --max-width: 1440px;
 }
 
+// Desktop (1660px)
+$laptop-device: "only screen and (min-width: 1440px)";
+
 // Desktop (1440px)
-$desktop-device: "only screen and (min-width: 1440px)";
+$laptop-device: "only screen and (min-width: 1440px)";
 
 // Tablet
 $tablet-device: "only screen and (min-width: 768px) and (max-width: 1439px)";

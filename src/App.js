@@ -12,16 +12,20 @@ import Footer from "./Components/Footer";
 
 export default function App() {
   return (
-    <main className="container">
+    <main>
       <Navbar />
-      <MainSectionHero />
-      <MovingLogos />
-      <ExpertiseSection />
-      <StatsSection />
-      <TestimonialSection />
-      <FAQSection />
-      <ContactSection />
-      <Footer />
+      <section className="container">
+        <div className="wrapper">
+          <MainSectionHero />
+          <MovingLogos />
+          <ExpertiseSection />
+          <StatsSection />
+          <TestimonialSection />
+          <FAQSection />
+          <ContactSection />
+          <Footer />
+        </div>
+      </section>
     </main>
   );
 }

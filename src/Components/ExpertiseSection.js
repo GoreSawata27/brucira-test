@@ -9,12 +9,12 @@ export default function ExpertiseSection() {
   };
   return (
     <div className="expertise">
-      <h2 className="mb-12 text-4xl font-bold text-start">
+      <h2>
         Our expertise and passion <br />
         breathe life into your narratives
       </h2>
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-        <div className="flex ">
+      <div className="grid grid-cols-[1fr_2fr] gap-8 md:grid-cols-[1fr_2fr]">
+        <div className="flex accordian-img ">
           <img
             src={accOne}
             alt="People clapping"
@@ -22,11 +22,10 @@ export default function ExpertiseSection() {
           />
         </div>
 
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-start accordion-container ">
           <div className="flex flex-col justify-center">
             <div className="space-y-4 text-gray-500">
-              {/* Innovative Accordion */}
-
+              {/* 1*/}
               <div>
                 <div
                   className="flex items-center justify-between pb-4 border-b cursor-pointer"
@@ -37,16 +36,16 @@ export default function ExpertiseSection() {
                 </div>
                 <div
                   className={`transition-max-height duration-500 ease-in-out overflow-hidden ${
-                    activeIndex === 0 ? "max-h-96" : "max-h-0"
+                    activeIndex === 0
+                      ? "max-h-96 acccprdian-border-bottom "
+                      : "max-h-0"
                   }`}
                 >
                   {activeIndex === 0 && (
-                    <div className="text-black">
-                      <span className="block text-lg font-bold">02</span>
-                      <span className="block text-xl font-bold text-red-500">
-                        Reliable
-                      </span>
-                      <p className="text-gray-600">
+                    <div>
+                      <span className="block accordian-number">01</span>
+                      <span className="accordian-title">Innovative</span>
+                      <p className="accordian-info">
                         Creation, ensuring your messages resonate worldwide.
                         From concept to distribution, our platform serves as
                         your strategic partner.
@@ -56,7 +55,7 @@ export default function ExpertiseSection() {
                 </div>
               </div>
 
-              {/* Reliable Accordion */}
+              {/* 2 */}
               <div>
                 <div
                   className="flex items-center justify-between pb-4 border-b cursor-pointer"
@@ -67,16 +66,16 @@ export default function ExpertiseSection() {
                 </div>
                 <div
                   className={`transition-max-height duration-500 ease-in-out overflow-hidden ${
-                    activeIndex === 1 ? "max-h-96" : "max-h-0"
+                    activeIndex === 1
+                      ? "max-h-96 acccprdian-border-bottom"
+                      : "max-h-0"
                   }`}
                 >
                   {activeIndex === 1 && (
-                    <div className="text-black">
-                      <span className="block text-lg font-bold">02</span>
-                      <span className="block text-xl font-bold text-red-500">
-                        Reliable
-                      </span>
-                      <p className="text-gray-600">
+                    <div>
+                      <span className="block accordian-number">02</span>
+                      <span className="accordian-title">Reliable</span>
+                      <p className="accordian-info">
                         Creation, ensuring your messages resonate worldwide.
                         From concept to distribution, our platform serves as
                         your strategic partner.
@@ -86,7 +85,7 @@ export default function ExpertiseSection() {
                 </div>
               </div>
 
-              {/* Quality Accordion */}
+              {/* 3 */}
               <div>
                 <div
                   className="flex items-center justify-between pb-4 border-b cursor-pointer"
@@ -97,16 +96,16 @@ export default function ExpertiseSection() {
                 </div>
                 <div
                   className={`transition-max-height duration-500 ease-in-out overflow-hidden ${
-                    activeIndex === 2 ? "max-h-96" : "max-h-0"
+                    activeIndex === 2
+                      ? "max-h-96 acccprdian-border-bottom "
+                      : "max-h-0"
                   }`}
                 >
                   {activeIndex === 2 && (
-                    <div className="text-black">
-                      <span className="block text-lg font-bold">02</span>
-                      <span className="block text-xl font-bold text-red-500">
-                        Reliable
-                      </span>
-                      <p className="text-gray-600">
+                    <div>
+                      <span className="block accordian-number">03</span>
+                      <span className="accordian-title">Quality</span>
+                      <p className="accordian-info">
                         Creation, ensuring your messages resonate worldwide.
                         From concept to distribution, our platform serves as
                         your strategic partner.

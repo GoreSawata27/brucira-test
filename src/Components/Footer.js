@@ -9,7 +9,7 @@ export default function Footer() {
             <h4 className="mb-4 font-bold">COMPANY</h4>
             <ul>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="/" className="text-gray-400 hover:text-white">
                   Who Are We
                 </a>
               </li>
@@ -19,7 +19,7 @@ export default function Footer() {
             <h4 className="mb-4 font-bold">RESOURCES</h4>
             <ul>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="/" className="text-gray-400 hover:text-white">
                   Blog
                 </a>
               </li>
@@ -29,17 +29,17 @@ export default function Footer() {
             <h4 className="mb-4 font-bold">WORK</h4>
             <ul>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="/" className="text-gray-400 hover:text-white">
                   Video
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="/" className="text-gray-400 hover:text-white">
                   Shoot
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="/" className="text-gray-400 hover:text-white">
                   Post
                 </a>
               </li>
@@ -49,17 +49,17 @@ export default function Footer() {
             <h4 className="mb-4 font-bold">SERVICES</h4>
             <ul>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="/" className="text-gray-400 hover:text-white">
                   Video
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="/" className="text-gray-400 hover:text-white">
                   Shoot
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="/" className="text-gray-400 hover:text-white">
                   Post
                 </a>
               </li>
@@ -69,12 +69,12 @@ export default function Footer() {
             <h4 className="mb-4 font-bold">CONTACT</h4>
             <ul>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="/" className="text-gray-400 hover:text-white">
                   Talk to us
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="/" className="text-gray-400 hover:text-white">
                   Collab
                 </a>
               </li>
