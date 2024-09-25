@@ -1,3 +1,50 @@
 .stats-section {
   margin: 100px 0;
+
+  & > div:first-child {
+    margin-bottom: 30px;
+  }
+
+  .global-hr {
+    width: 54px;
+    border: 1px solid #ef001c;
+  }
+  .global-title {
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27.24px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #ef001c;
+  }
+
+  .stats-count {
+    font-family: var(--font-style-Everett);
+    font-size: 86px;
+    font-weight: 600;
+    line-height: 88px;
+    letter-spacing: -0.03em;
+    text-align: left;
+
+    .plus {
+      font-family: var(--font-style-Everett);
+      font-size: 86px;
+      font-weight: 600;
+      line-height: 88px;
+      letter-spacing: -0.03em;
+      text-align: left;
+      color: #ef001c;
+    }
+  }
+  .title {
+    max-width: 200px;
+    font-family: var(--font-style-Everett);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    color: #111010;
+  }
 }

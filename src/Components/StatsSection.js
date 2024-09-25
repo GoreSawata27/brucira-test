@@ -4,36 +4,35 @@ export default function StatsSection() {
   return (
     <section>
       <div className="stats-section">
-        <h3 className="mb-8 text-lg font-semibold text-red-500 text-start">
-          WE ARE GLOBAL
-        </h3>
+        <div className="flex items-center gap-3">
+          <div className="global-hr"></div>
+          <h3 className="global-title">WE ARE GLOBAL</h3>
+        </div>
 
-        <div className="grid grid-cols-2 gap-8 text-center md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-8 text-start md:grid-cols-4">
           <div>
-            <h4 className="text-4xl font-bold text-black">
-              60<span className="text-red-500">+</span>
+            <h4 className="stats-count">
+              60<span className="plus">+</span>
             </h4>
-            <p className="mt-2 text-gray-600">brands partnered with</p>
+            <p className="title">brands partnered with</p>
           </div>
           <div>
-            <h4 className="text-4xl font-bold text-black">
-              3K<span className="text-red-500">+</span>
+            <h4 className="stats-count">
+              3K<span className="plus">+</span>
             </h4>
-            <p className="mt-2 text-gray-600">brand content assets created</p>
+            <p className="title">brand content assets created</p>
           </div>
           <div>
-            <h4 className="text-4xl font-bold text-black">
-              1K<span className="text-red-500">+</span>
+            <h4 className="stats-count">
+              1K<span className="plus">+</span>
             </h4>
-            <p className="mt-2 text-gray-600">
-              global partners and collaborators
-            </p>
+            <p className="title">global partners and collaborators</p>
           </div>
           <div>
-            <h4 className="text-4xl font-bold text-black">
-              100<span className="text-red-500">+</span>
+            <h4 className="stats-count">
+              100<span className="plus">+</span>
             </h4>
-            <p className="mt-2 text-gray-600">cities worldwide</p>
+            <p className="title">cities worldwide</p>
           </div>
         </div>
       </div>
