@@ -3,6 +3,7 @@ import Navbar from "./Components/Navbar";
 import MainSectionHero from "./Components/MainSectionHero";
 import "./scss/style.scss";
 import MovingLogos from "./Components/MovingLogos";
+import ExpertiseSection from "./Components/ExpertiseSection";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <Navbar />
       <MainSectionHero />
       <MovingLogos />
+      <ExpertiseSection />
     </main>
   );
 }
