@@ -1,0 +1,30 @@
+/*-- Variables --*/
+:root {
+  //font style
+  --font-style: "Open Sans", sans-serif;
+  --font-style-Everett: "Signika", sans-serif;
+
+  // Theme Color
+
+  --color-primary: #ffffff;
+  // --color-secondary: #ef001c;
+
+  //text color
+  --text-primary: #111010;
+  --text-secondary: #ef001c;
+}
+
+// Desktop (1440px)
+$desktop-device: "only screen and (min-width: 1440px)";
+
+// Tablet
+$tablet-device: "only screen and (min-width: 768px) and (max-width: 1439px)";
+
+// Mobile
+$mobile-device: "only screen and (max-width: 767px)";
+$large-mobile: "only screen and (max-width: 575px)";
+$small-mobile: "only screen and (max-width: 479px)";
+
+// @media #{$small-mobile} {
+//   width: 100px;
+// }

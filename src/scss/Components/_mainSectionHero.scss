@@ -1,0 +1,52 @@
+.hero-section {
+  padding: 0 90px;
+  padding-top: 36px;
+
+  h1 {
+    font-family: var(--font-style-Everett);
+    font-size: 104px;
+    font-weight: 500;
+    line-height: 112px;
+    letter-spacing: -0.03em;
+    text-align: left;
+  }
+  .get-service {
+    max-width: 725px;
+    max-height: 164px;
+    padding-top: 60px;
+
+    .get-service-title {
+      font-family: Open Sans;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32px;
+      letter-spacing: -0.04em;
+      text-align: left;
+      color: #111010;
+    }
+
+    .get-service-video-btn {
+      max-width: 376.31px;
+      height: 60px;
+      padding: 20px 32px;
+      background-color: #ef001c;
+      border-radius: 34px;
+    }
+
+    .text-btn {
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #ffffff;
+      background: none;
+      border: none;
+      text-align: left;
+    }
+
+    .avtar-image {
+      height: 48px;
+      width: 48px;
+    }
+  }
+}

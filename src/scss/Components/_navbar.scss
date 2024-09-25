@@ -1,0 +1,49 @@
+.navbar {
+  height: 86px;
+  width: 100%;
+  padding: 0 90px;
+  border-bottom: 1px solid #0000001a;
+
+  .company-logo {
+    width: 209px;
+    height: 38px;
+    opacity: 0px;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+
+    a {
+      display: flex;
+      font-family: Open Sans;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+      text-align: left;
+      width: 85.5px;
+      height: 20px;
+      color: #707070;
+
+      &.active {
+        color: #111010;
+      }
+      &.disabled {
+        color: #a09f9f;
+        cursor: no-drop;
+      }
+    }
+  }
+
+  .get-btn {
+    width: 136px;
+    height: 30px;
+    background-color: #ef001c;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+  }
+}
