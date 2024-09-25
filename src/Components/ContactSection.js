@@ -3,7 +3,7 @@ import React from "react";
 export default function ContactSection() {
   return (
     <section>
-      <div className="mb-12 text-center">
+      <div className="mb-12 text-center ">
         <h2 className="text-5xl font-bold">
           LET'S START SOMETHING <span className="text-red-500">NEW</span>{" "}
           TOGETHER

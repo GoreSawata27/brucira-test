@@ -14,13 +14,9 @@ export default function ExpertiseSection() {
           Our expertise and passion <br />
           breathe life into your narratives
         </h2>
-        <div className="grid grid-cols-[1fr_2fr] gap-8 md:grid-cols-[1fr_2fr]">
+        <div className="grid grid-cols-[1fr_2fr] gap-8 md:grid-cols-[1fr_2fr] accordian-section">
           <div className="flex accordian-img ">
-            <img
-              src={accOne}
-              alt="People clapping"
-              className="rounded-lg shadow-lg"
-            />
+            <img src={accOne} alt="People clapping" className="rounded-lg " />
           </div>
 
           <div className="flex flex-col justify-start accordion-container ">
@@ -32,7 +28,7 @@ export default function ExpertiseSection() {
                     className="flex items-center justify-between pb-4 border-b cursor-pointer"
                     onClick={() => toggleAccordion(0)}
                   >
-                    <span>Innovative</span>
+                    <span className="accordian-main-title">Innovative</span>
                     <span>{activeIndex === 0 ? "-" : "+"}</span>
                   </div>
                   <div
@@ -62,7 +58,7 @@ export default function ExpertiseSection() {
                     className="flex items-center justify-between pb-4 border-b cursor-pointer"
                     onClick={() => toggleAccordion(1)}
                   >
-                    <span>Reliable</span>
+                    <span className="accordian-main-title">Reliable</span>
                     <span>{activeIndex === 1 ? "-" : "+"}</span>
                   </div>
                   <div
@@ -92,7 +88,7 @@ export default function ExpertiseSection() {
                     className="flex items-center justify-between pb-4 border-b cursor-pointer"
                     onClick={() => toggleAccordion(2)}
                   >
-                    <span>Quality</span>
+                    <span className="accordian-main-title">Quality</span>
                     <span>{activeIndex === 2 ? "-" : "+"}</span>
                   </div>
                   <div

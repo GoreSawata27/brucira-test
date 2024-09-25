@@ -8,7 +8,7 @@ import previewArrow from "../assets/HeroSection/Vector.svg";
 export default function MainSectionHero() {
   return (
     <section>
-      <div className="hero-section wrapper">
+      <div className="hero-section">
         <h1 className="hero-heading">
           <div>WE ARE A </div>
           <div>
