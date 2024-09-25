@@ -21,6 +21,7 @@ body {
   background: var(--color-primary);
   width: 100vw;
   height: 100%;
+  overflow-x: hidden;
 }
 
 textarea {
