@@ -26,6 +26,7 @@ export default function ExpertiseSection() {
           <div className="flex flex-col justify-center">
             <div className="space-y-4 text-gray-500">
               {/* Innovative Accordion */}
+
               <div>
                 <div
                   className="flex items-center justify-between pb-4 border-b cursor-pointer"
