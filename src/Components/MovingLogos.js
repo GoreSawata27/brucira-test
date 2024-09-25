@@ -18,10 +18,11 @@ export default function MovingLogos() {
     { src: indiagoldLogo, alt: "Indiagold" },
     { src: otherLogo, alt: "Other" },
     { src: my11CircleLogo, alt: "My11Circle" },
+    { src: ikeaLogo, alt: "IKEA" },
   ];
 
   return (
-    <section className="moving-logos">
+    <div className="moving-logos">
       <Marquee speed={50} gradient={false} pauseOnHover={true}>
         {logos.map((logo, index) => (
           <img
@@ -32,6 +33,6 @@ export default function MovingLogos() {
           />
         ))}
       </Marquee>
-    </section>
+    </div>
   );
 }

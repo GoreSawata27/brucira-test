@@ -14,18 +14,14 @@ export default function App() {
   return (
     <main>
       <Navbar />
-      <section className="container">
-        <div className="wrapper">
-          <MainSectionHero />
-          <MovingLogos />
-          <ExpertiseSection />
-          <StatsSection />
-          <TestimonialSection />
-          <FAQSection />
-          <ContactSection />
-          <Footer />
-        </div>
-      </section>
+      <MainSectionHero />
+      <MovingLogos />
+      <ExpertiseSection />
+      <StatsSection />
+      <TestimonialSection />
+      <FAQSection />
+      <ContactSection />
+      <Footer />
     </main>
   );
 }

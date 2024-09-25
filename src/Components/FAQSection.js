@@ -8,7 +8,7 @@ export default function FAQSection() {
   };
 
   return (
-    <div>
+    <section>
       <h2 className="mb-8 text-4xl font-bold">Frequently asked questions</h2>
 
       <div className="space-y-4">
@@ -37,6 +37,6 @@ export default function FAQSection() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

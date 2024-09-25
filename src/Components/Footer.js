@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <>
+    <section>
       <div className="px-8 py-8 mt-16 text-white bg-black">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-5">
           <div>
@@ -85,6 +85,6 @@ export default function Footer() {
           <p>©2023 Red Bangle | Privacy Policy | Legal | Terms & Conditions</p>
         </div>
       </div>
-    </>
+    </section>
   );
 }
