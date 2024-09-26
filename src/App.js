@@ -9,6 +9,7 @@ import TestimonialSection from "./Components/TestimonialSection";
 import FAQSection from "./Components/FAQSection";
 import ContactSection from "./Components/ContactSection";
 import Footer from "./Components/Footer";
+import VisualImpact from "./Components/VisualImpact";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
       <TestimonialSection />
       <FAQSection />
       <ContactSection />
+      <VisualImpact />
       <Footer />
     </main>
   );
