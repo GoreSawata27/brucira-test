@@ -1,43 +1,78 @@
-import React from "react";
+import React, { useState } from "react";
 import partnersOne from "../assets/unsplash__H6wpor9mjs.svg";
+import partnersTwo from "../assets/Expertise/Mask group.svg";
 
-export default function TestimonialSection() {
+const Gallery = () => {
+  const [index, setIndex] = useState(0);
+
+  const frames = [
+    {
+      title: "LISSA SMITH",
+      role: "DIRECTOR OF MARKETING AND COMMUNICATIONS",
+      company: "VYMO",
+      image: partnersOne,
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the industry's standard dummy  text ever since the 1500s, when an unknown printer took a galley of  type and scrambled",
+    },
+    {
+      title: "JOHN DOE",
+      role: "CEO",
+      company: "Tech Corp",
+      image: partnersTwo,
+      description:
+        "Typesetting industry. Lorem Ipsum has been the industry's standard dummy  text ever since the 1500s, when an unknown printer took a galley of  type and scrambled Lorem Ipsum is simply dummy text of the printing",
+    },
+    {
+      title: "LISSA SMITH",
+      role: "DIRECTOR OF MARKETING AND COMMUNICATIONS",
+      company: "VYMO",
+      image: partnersOne,
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the industry's standard dummy  text ever since the 1500s, when an unknown printer took a galley of  type and scrambled",
+    },
+  ];
+
+  const next = () => {
+    if (index < frames.length - 1) setIndex(index + 1);
+  };
+
+  const prev = () => {
+    if (index > 0) setIndex(index - 1);
+  };
+
   return (
     <section>
-      <div className="grid items-center grid-cols-1 gap-8 mb-16 md:grid-cols-2">
-        <div className="flex justify-center">
-          <img
-            src={partnersOne}
-            alt="Lissa Smith"
-            className="object-cover w-full h-full rounded-lg shadow-lg"
-          />
+      <div className="flex items-center gap-3 mb-8 ">
+        <div className="testimony-hr"></div>
+        <div className="testimony">TESTIMONY FROM OUR PARTNERS</div>
+      </div>
+      <div className="gallery-container">
+        <div className="image-container">
+          <img src={frames[index].image} alt={frames[index].title} />
         </div>
-
-        <div className="flex flex-col justify-center space-y-6">
-          <h3 className="text-sm font-semibold text-red-500 uppercase">
-            Testimony from our partners
-          </h3>
-          <p className="text-gray-600">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled.
-          </p>
-          <div>
-            <h4 className="text-lg font-bold">LISSA SMITH, VYMO</h4>
-            <p className="text-gray-500">
-              Director of Marketing and Communications
-            </p>
-          </div>
-
-          <div className="flex items-center space-x-4">
-            <button className="p-2 border border-black rounded-full">←</button>
-            <button className="p-2 text-white bg-red-500 rounded-full">
-              →
-            </button>
+        <div className="text-container">
+          <div className="frame-description">{frames[index].description}</div>
+          <div className="flex items-end justify-between ">
+            <div className="frame-role">
+              <div className="frame-title">
+                {frames[index].title},
+                <span className="frame-company">{frames[index].company}</span>
+              </div>
+              <div className="frame-role-title">{frames[index].role}</div>
+            </div>
+            <div className="button-container">
+              <button className="prev" onClick={prev}>
+                ←
+              </button>
+              <button className="next" onClick={next}>
+                →
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default Gallery;

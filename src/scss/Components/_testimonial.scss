@@ -1,0 +1,111 @@
+.testimony {
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27.24px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #db2f2c;
+}
+.testimony-hr {
+  width: 54px;
+  height: 1px;
+  border: 1px solid #ef001c;
+}
+.gallery-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 10px;
+  max-width: 100%;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.image-container {
+  width: 484px;
+  height: 517px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.frame-description {
+  width: 634px;
+  height: 205px;
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 41px;
+  letter-spacing: -0.003em;
+  text-align: left;
+  color: #111010;
+  flex: 1;
+}
+
+.frame-role {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.frame-title {
+  font-family: Open Sans;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  color: #111010;
+}
+.frame-company {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+}
+.frame-role-title {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #111010cc;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+button.prev,
+button.next {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+button.prev {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ddd;
+}
+
+button.next {
+  background-color: red;
+  color: #fff;
+}
