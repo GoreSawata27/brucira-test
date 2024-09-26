@@ -1,5 +1,5 @@
 .testimony {
-  font-family: Open Sans;
+  font-family: var(--font-style);
   font-size: 20px;
   font-weight: 600;
   line-height: 27.24px;
@@ -43,7 +43,7 @@
 .frame-description {
   width: 634px;
   height: 205px;
-  font-family: Open Sans;
+  font-family: var(--font-style);
   font-size: 24px;
   font-weight: 600;
   line-height: 41px;
@@ -60,7 +60,7 @@
 }
 
 .frame-title {
-  font-family: Open Sans;
+  font-family: var(--font-style);
   font-size: 28px;
   font-weight: 700;
   line-height: 32px;
@@ -68,13 +68,13 @@
   color: #111010;
 }
 .frame-company {
-  font-family: Open Sans;
+  font-family: var(--font-style);
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
 }
 .frame-role-title {
-  font-family: Open Sans;
+  font-family: var(--font-style);
   font-size: 18px;
   font-weight: 600;
   line-height: 26px;

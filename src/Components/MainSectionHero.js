@@ -13,7 +13,7 @@ export default function MainSectionHero() {
           <div>WE ARE A </div>
           <div>
             GLOBAL
-            <span className="text-red-500"> PRODUCTION</span>
+            <span className="hero-heading-red">PRODUCTION</span>
           </div>
           AGENCY
         </h1>
