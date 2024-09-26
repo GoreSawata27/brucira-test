@@ -95,16 +95,18 @@ button.next {
   width: 40px;
   height: 40px;
   border: none;
-  cursor: pointer;
 }
 
-button.prev {
-  background-color: #fff;
-  color: #000;
-  border: 1px solid #ddd;
+button.prev,
+button.next {
+  width: 66.31px;
+  height: 50.31px;
+  border-radius: 34px;
+  border: 1.6px solid #111010;
 }
 
 button.next {
-  background-color: red;
+  background: #ef001c;
   color: #fff;
+  border: none;
 }

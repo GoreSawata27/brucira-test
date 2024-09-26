@@ -23,4 +23,14 @@
 
     color: #111010;
   }
+
+  .arrow-up {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+
+  .arrow-down {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+  }
 }
