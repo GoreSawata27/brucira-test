@@ -21,7 +21,7 @@
 
       a {
         display: flex;
-        font-family: Open Sans;
+        font-family: var(--font-style);
         font-size: 14px;
         font-weight: 600;
         line-height: 20px;
@@ -44,7 +44,7 @@
       width: 136px;
       height: 30px;
       background-color: #ef001c;
-      font-family: Open Sans;
+      font-family: var(--font-style);
       font-size: 14px;
       font-weight: 600;
       line-height: 20px;

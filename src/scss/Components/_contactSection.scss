@@ -38,7 +38,7 @@
 
     .contact-card-description {
       max-width: 250px;
-      font-family: Open Sans;
+      font-family: var(--font-style);
       font-size: 13px;
       font-weight: 400;
       line-height: 19px;
@@ -54,7 +54,7 @@
     margin-top: 50px;
 
     .contact-form-title {
-      font-family: Open Sans;
+      font-family: var(--font-style);
       font-size: 24px;
       font-weight: 600;
       line-height: 26px;
@@ -83,10 +83,9 @@
   .contact-form-submit-btn {
     width: 468px;
     height: 60px;
-    opacity: 0px;
     background-color: #ef001c;
     border-radius: 34px;
-    font-family: Open Sans;
+    font-family: var(--font-style);
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;

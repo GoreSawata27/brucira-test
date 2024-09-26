@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import partnersOne from "../assets/unsplash__H6wpor9mjs.svg";
 import partnersTwo from "../assets/Expertise/Mask group.svg";
+import leftArrow from "../assets/Vector 208.svg";
+import rightArrow from "../assets/Group 1686552199.svg";
+import videoPreview from "../assets/HeroSection/image 793.svg";
 
 const Gallery = () => {
   const [index, setIndex] = useState(0);
@@ -26,7 +29,7 @@ const Gallery = () => {
       title: "LISSA SMITH",
       role: "DIRECTOR OF MARKETING AND COMMUNICATIONS",
       company: "VYMO",
-      image: partnersOne,
+      image: videoPreview,
       description:
         "Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the industry's standard dummy  text ever since the 1500s, when an unknown printer took a galley of  type and scrambled",
     },
@@ -61,11 +64,23 @@ const Gallery = () => {
               <div className="frame-role-title">{frames[index].role}</div>
             </div>
             <div className="button-container">
-              <button className="prev" onClick={prev}>
-                ←
+              <button
+                className={`flex items-center justify-center prev ${
+                  index === 0 && "cursor-not-allowed "
+                }`}
+                onClick={prev}
+                disabled={index < 1}
+              >
+                <img src={leftArrow} alt="left Arrow" />
               </button>
-              <button className="next" onClick={next}>
-                →
+              <button
+                className={`flex items-center justify-center next ${
+                  index === 2 && "cursor-not-allowed "
+                }`}
+                onClick={next}
+                disabled={index > 2}
+              >
+                <img src={rightArrow} alt="right Arrow" />
               </button>
             </div>
           </div>

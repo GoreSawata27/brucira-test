@@ -1,5 +1,5 @@
 .testimony {
-  font-family: Open Sans;
+  font-family: var(--font-style);
   font-size: 20px;
   font-weight: 600;
   line-height: 27.24px;
@@ -43,7 +43,7 @@
 .frame-description {
   width: 634px;
   height: 205px;
-  font-family: Open Sans;
+  font-family: var(--font-style);
   font-size: 24px;
   font-weight: 600;
   line-height: 41px;
@@ -60,7 +60,7 @@
 }
 
 .frame-title {
-  font-family: Open Sans;
+  font-family: var(--font-style);
   font-size: 28px;
   font-weight: 700;
   line-height: 32px;
@@ -68,13 +68,13 @@
   color: #111010;
 }
 .frame-company {
-  font-family: Open Sans;
+  font-family: var(--font-style);
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
 }
 .frame-role-title {
-  font-family: Open Sans;
+  font-family: var(--font-style);
   font-size: 18px;
   font-weight: 600;
   line-height: 26px;
@@ -95,16 +95,18 @@ button.next {
   width: 40px;
   height: 40px;
   border: none;
-  cursor: pointer;
 }
 
-button.prev {
-  background-color: #fff;
-  color: #000;
-  border: 1px solid #ddd;
+button.prev,
+button.next {
+  width: 66.31px;
+  height: 50.31px;
+  border-radius: 34px;
+  border: 1.6px solid #111010;
 }
 
 button.next {
-  background-color: red;
+  background: #ef001c;
   color: #fff;
+  border: none;
 }

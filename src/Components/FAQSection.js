@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import faqArrow from "../assets/faq.svg";
+
 export default function FAQSection() {
   const [activeFAQ, setActiveFAQ] = useState(null);
 
@@ -23,18 +25,28 @@ export default function FAQSection() {
 
         <div className="space-y-4">
           {arr.map((faq, index) => (
-            <div key={index} className="py-4 border-b">
+            <div
+              key={index}
+              className="py-4 border-b"
+              onClick={() => toggleFAQ(index)}
+            >
               <button
                 onClick={() => toggleFAQ(index)}
                 className="flex items-center justify-between w-full text-left"
               >
                 <span className="fqa-question">{faq}</span>
-                <span>{activeFAQ === index ? "−" : "+"}</span>
+                <span>
+                  <img
+                    src={faqArrow}
+                    alt="arrow"
+                    className={activeFAQ === index ? "arrow-up" : "arrow-down"}
+                  />
+                </span>
               </button>
               {activeFAQ === index && (
                 <p className="mt-2 text-gray-600">
-                  This is the answer to the question. You can replace this text
-                  with the actual answer.
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo,
+                  commodi laborum repellendus quasi optio harum quae enim,
                 </p>
               )}
             </div>

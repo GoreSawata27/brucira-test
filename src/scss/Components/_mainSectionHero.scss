@@ -6,14 +6,18 @@
     font-size: 104px;
     font-weight: 600;
     line-height: 112px;
-    letter-spacing: -0.03em;
+    // letter-spacing: -0.03em;
+  }
+  .hero-heading-red {
+    color: #ef001c;
+    padding-left: 35px;
   }
   .get-service {
     max-width: 725px;
-    margin-top: 80px;
+    margin-top: 60px;
 
     .get-service-title {
-      font-family: Open Sans;
+      font-family: var(--font-style);
       font-size: 24px;
       font-weight: 600;
       line-height: 32px;
@@ -31,7 +35,7 @@
     }
 
     .text-btn {
-      font-family: "Open Sans", sans-serif;
+      font-family: var(--font-style);
       font-size: 16px;
       font-weight: 700;
       line-height: 20px;

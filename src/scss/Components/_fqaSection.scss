@@ -15,12 +15,22 @@
   }
 
   .fqa-question {
-    font-family: Open Sans;
+    font-family: var(--font-style);
     font-size: 18px;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: -0.006em;
 
     color: #111010;
+  }
+
+  .arrow-up {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+
+  .arrow-down {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
   }
 }
