@@ -1,6 +1,7 @@
 import React from "react";
 import Ayesha from "../assets/HeroSection/Ayesha.svg";
 import Marin from "../assets/HeroSection/Marin.svg";
+import rightArrow from "../assets/Group 1686552199.svg";
 
 export default function ContactSection() {
   const arr = [
@@ -59,30 +60,31 @@ export default function ContactSection() {
           </div>
 
           <div className="flex flex-col ml-auto text-right contact-form">
-            <h3 className="contact-form-title">
-              Give us a few details and we’ll get in touch
-            </h3>
-            <form className="main-contact-form">
-              <input type="text" placeholder="Name*" className="w-full p-3" />
-              <input
-                type="text"
-                placeholder="Company name*"
-                className="w-full p-3 "
-              />
-              <input type="email" placeholder="Email*" className="w-full p-3" />
-              <input
-                type="text"
-                placeholder="Phone no*"
-                className="w-full p-3 "
-              />
-              <input
-                type="text"
-                placeholder="Message*"
-                className="w-full p-3 "
-              />
-            </form>
-            <button type="btn" className="contact-form-submit-btn">
-              CONTACT US →
+            <div>
+              <h3 className="contact-form-title">
+                Give us a few details and we’ll get in touch
+              </h3>
+              <form className="main-contact-form">
+                <input type="text" placeholder="Name*" className="w-full " />
+                <input
+                  type="text"
+                  placeholder="Company name*"
+                  className="w-full "
+                />
+                <input type="email" placeholder="Email*" className="w-full " />
+                <input
+                  type="text"
+                  placeholder="Phone no*"
+                  className="w-full "
+                />
+                <input type="text" placeholder="Message*" className="w-full " />
+              </form>
+            </div>
+            <button
+              type="btn"
+              className="flex items-center justify-center gap-3 contact-form-submit-btn"
+            >
+              CONTACT US <img src={rightArrow} alt="right Arrow" />
             </button>
           </div>
         </div>

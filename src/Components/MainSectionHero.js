@@ -18,17 +18,17 @@ export default function MainSectionHero() {
           AGENCY
         </h1>
         <div className="flex items-end justify-between">
-          <div className="flex flex-col gap-8 get-service">
+          <div className="flex flex-col gap-11 get-service">
             <p className="get-service-title">
               Designed with the specific needs of large B2B enterprises in mind,
               our platform offers a comprehensive solution to simplify.
             </p>
             <div className="flex items-center gap-6 ">
-              <div className="flex items-center justify-center gap-2 rounded-full get-service-video-btn">
-                <button className="text-btn">
+              <div className=" get-service-video-btn">
+                <button className="flex items-center justify-center gap-3 text-btn">
                   GET PROFESSIONAL VIDEO SERVICES
+                  <img src={btnArrow} alt="right arrow" />
                 </button>
-                <img src={btnArrow} alt="right arrow" />
               </div>
 
               <div className="flex items-center gap-2 space-x-2">
