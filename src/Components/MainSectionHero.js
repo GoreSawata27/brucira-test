@@ -24,11 +24,11 @@ export default function MainSectionHero() {
               our platform offers a comprehensive solution to simplify.
             </p>
             <div className="flex items-center gap-6 ">
-              <div className="flex items-center justify-center gap-2 rounded-full get-service-video-btn">
-                <button className="text-btn">
+              <div className=" get-service-video-btn">
+                <button className="flex items-center justify-center gap-3 text-btn">
                   GET PROFESSIONAL VIDEO SERVICES
+                  <img src={btnArrow} alt="right arrow" />
                 </button>
-                <img src={btnArrow} alt="right arrow" />
               </div>
 
               <div className="flex items-center gap-2 space-x-2">

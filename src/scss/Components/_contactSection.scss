@@ -49,9 +49,11 @@
   }
 
   .contact-form {
-    width: 468px;
-    // max-height: 462px;
-    margin-top: 50px;
+    width: 500px;
+    max-height: 462px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
 
     .contact-form-title {
       font-family: var(--font-style);
