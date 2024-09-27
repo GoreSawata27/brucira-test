@@ -49,12 +49,16 @@ export default function ExpertiseSection() {
                 {/* 1*/}
                 <div>
                   <div
-                    className="flex items-center justify-between pb-4 border-b cursor-pointer"
+                    className={`flex items-center justify-between  border-b cursor-pointer ${
+                      activeIndex !== 0 && "pb-4"
+                    }`}
                     onClick={() => toggleAccordion(0)}
                   >
                     <span>
                       {activeIndex !== 0 && (
-                        <span className="accordian-main-title">Innovative</span>
+                        <span className="accordian-main-title ">
+                          Innovative
+                        </span>
                       )}
                     </span>
                   </div>
@@ -82,8 +86,8 @@ export default function ExpertiseSection() {
                 {/* 2 */}
                 <div>
                   <div
-                    className={`flex items-center justify-between pb-4  cursor-pointer ${
-                      activeIndex !== 1 && "border-b"
+                    className={`flex items-center justify-between  cursor-pointer ${
+                      activeIndex !== 1 && "border-b pb-4"
                     }`}
                     onClick={() => toggleAccordion(1)}
                   >
@@ -117,8 +121,8 @@ export default function ExpertiseSection() {
                 {/* 3 */}
                 <div>
                   <div
-                    className={`flex items-center justify-between pb-4  cursor-pointer ${
-                      activeIndex !== 2 && "border-b"
+                    className={`flex items-center justify-between   cursor-pointer ${
+                      activeIndex !== 2 && "border-b pb-4"
                     }`}
                     onClick={() => toggleAccordion(2)}
                   >
