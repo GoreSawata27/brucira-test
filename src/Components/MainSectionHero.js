@@ -18,7 +18,7 @@ export default function MainSectionHero() {
           AGENCY
         </h1>
         <div className="flex items-end justify-between">
-          <div className="flex flex-col gap-8 get-service">
+          <div className="flex flex-col gap-11 get-service">
             <p className="get-service-title">
               Designed with the specific needs of large B2B enterprises in mind,
               our platform offers a comprehensive solution to simplify.

@@ -65,27 +65,19 @@ export default function ContactSection() {
                 Give us a few details and we’ll get in touch
               </h3>
               <form className="main-contact-form">
-                <input type="text" placeholder="Name*" className="w-full p-3" />
+                <input type="text" placeholder="Name*" className="w-full " />
                 <input
                   type="text"
                   placeholder="Company name*"
-                  className="w-full p-3 "
+                  className="w-full "
                 />
-                <input
-                  type="email"
-                  placeholder="Email*"
-                  className="w-full p-3"
-                />
+                <input type="email" placeholder="Email*" className="w-full " />
                 <input
                   type="text"
                   placeholder="Phone no*"
-                  className="w-full p-3 "
+                  className="w-full "
                 />
-                <input
-                  type="text"
-                  placeholder="Message*"
-                  className="w-full p-3 "
-                />
+                <input type="text" placeholder="Message*" className="w-full " />
               </form>
             </div>
             <button
