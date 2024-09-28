@@ -50,7 +50,7 @@ export default function Navbar() {
       </div>
 
       {isMobileMenuOpen && (
-        <nav className="flex flex-col items-end pb-6 pr-5 space-y-4 text-sm mobile-menu ">
+        <nav className="flex flex-col items-end pb-6 pr-5 space-y-4 text-sm border-b-2 border-gray-600 mobile-menu ">
           <a className="flex gap-2" href="/" onClick={toggleMobileMenu}>
             SERVICES <img src={UpArrow} alt="arrow-img" />
           </a>
