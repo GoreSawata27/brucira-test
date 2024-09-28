@@ -25,11 +25,7 @@ export default function FAQSection() {
 
         <div className="space-y-4">
           {arr.map((faq, index) => (
-            <div
-              key={index}
-              className="py-4 border-b"
-              onClick={() => toggleFAQ(index)}
-            >
+            <div key={index} className="py-4 border-b" onClick={() => toggleFAQ(index)}>
               <button
                 onClick={() => toggleFAQ(index)}
                 className="flex items-center justify-between w-full text-left"
@@ -45,8 +41,8 @@ export default function FAQSection() {
               </button>
               {activeFAQ === index && (
                 <p className="mt-2 text-gray-600">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo,
-                  commodi laborum repellendus quasi optio harum quae enim,
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, commodi laborum repellendus
+                  quasi optio harum quae enim,
                 </p>
               )}
             </div>

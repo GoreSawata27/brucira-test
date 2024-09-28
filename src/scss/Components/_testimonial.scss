@@ -1,10 +1,10 @@
 .testimony {
   font-family: var(--font-style);
-  font-size: 20px;
+  font-size: 1.125rem;
+  font-size: clamp(1.125rem, 1.0921052631578947rem + 0.17543859649122806vw, 1.25rem);
   font-weight: 600;
   line-height: 27.24px;
   letter-spacing: 0.05em;
-
   color: #db2f2c;
 }
 .testimony-hr {
@@ -19,11 +19,19 @@
   max-width: 100%;
   align-items: center;
   margin-bottom: 100px;
+
+  @media #{$md} {
+    grid-template-columns: 100%;
+  }
 }
 
 .image-container {
   width: 484px;
   height: 517px;
+
+  @media #{$md} {
+    width: 100%;
+  }
 }
 
 .image-container img {
@@ -44,13 +52,18 @@
   width: 634px;
   height: 205px;
   font-family: var(--font-style);
-  font-size: 24px;
+  font-size: 1.125rem;
+  font-size: clamp(1.125rem, 1.0263157894736843rem + 0.5263157894736842vw, 1.5rem);
   font-weight: 600;
   line-height: 41px;
   letter-spacing: -0.003em;
-
   color: #111010;
   flex: 1;
+
+  @media #{$md} {
+    width: 100%;
+    margin: 10px 0;
+  }
 }
 
 .frame-role {
@@ -61,10 +74,10 @@
 
 .frame-title {
   font-family: var(--font-style);
-  font-size: 28px;
+  font-size: 1.125rem;
+  font-size: clamp(1.125rem, 0.9605263157894737rem + 0.8771929824561403vw, 1.75rem);
   font-weight: 700;
   line-height: 32px;
-
   color: #111010;
 }
 .frame-company {
@@ -79,7 +92,6 @@
   font-weight: 600;
   line-height: 26px;
   letter-spacing: -0.01em;
-
   color: #111010cc;
 }
 

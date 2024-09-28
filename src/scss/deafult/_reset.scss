@@ -38,4 +38,9 @@ section {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 90px;
+
+  @media #{$sm} {
+    padding: 0 20px;
+    margin: 8px 0;
+  }
 }

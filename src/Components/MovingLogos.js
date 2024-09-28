@@ -23,14 +23,9 @@ export default function MovingLogos() {
 
   return (
     <div className="moving-logos">
-      <Marquee speed={50} gradient={false} pauseOnHover={true}>
+      <Marquee speed={70} gradient={false} pauseOnHover={true}>
         {logos.map((logo, index) => (
-          <img
-            key={index}
-            src={logo.src}
-            alt={logo.alt}
-            className="h-10 mx-6"
-          />
+          <img key={index} src={logo.src} alt={logo.alt} className="h-10 mx-6" />
         ))}
       </Marquee>
     </div>

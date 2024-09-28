@@ -1,11 +1,11 @@
-.expertise {
+.expertise-container {
   h2 {
     font-family: var(--font-style-Everett);
-    font-size: 52px;
+    font-size: 1.75rem;
+    font-size: clamp(1.75rem, 1.3552631578947367rem + 2.1052631578947367vw, 3.25rem);
     font-weight: 600;
     line-height: 56px;
     letter-spacing: -0.02em;
-
     color: #111010;
     margin-bottom: 45px;
   }
@@ -13,8 +13,24 @@
   .accordian-section {
     min-height: 400px;
 
+    @media #{$sm} {
+      display: flex;
+      flex-direction: column;
+      max-width: 350px;
+    }
+
+    @media #{$md} {
+      display: flex;
+      flex-direction: column;
+      max-width: 650px;
+    }
+
     .accordion-container {
       margin-top: 35px;
+
+      @media #{$md} {
+        margin-top: 25px;
+      }
 
       .accordian-img img {
         width: 484px;
@@ -23,23 +39,25 @@
 
       .accordian-number {
         font-family: var(--font-style-Everett);
-        font-size: 20px;
+        font-size: 0.875rem;
+        font-size: clamp(0.875rem, 0.7763157894736842rem + 0.5263157894736842vw, 1.25rem);
         font-weight: 600;
         line-height: 28px;
-
         color: #ef001c;
         padding: 5px 0;
       }
       .accordian-main-title {
         font-family: var(--font-style-Everett);
-        font-size: 24px;
+        font-size: 1rem;
+        font-size: clamp(1rem, 0.868421052631579rem + 0.7017543859649122vw, 1.5rem);
         font-weight: 600;
         line-height: 28px;
         color: #333333;
       }
       .accordian-title {
         font-family: var(--font-style-Everett);
-        font-size: 32px;
+        font-size: 1.5rem;
+        font-size: clamp(1.5rem, 1.368421052631579rem + 0.7017543859649122vw, 2rem);
         font-weight: 600;
         line-height: 38px;
         color: #111010;
@@ -59,8 +77,5 @@
         border-bottom: 1px solid #11101026;
       }
     }
-  }
-  .accordian {
-    border: 1px solid #11101026;
   }
 }

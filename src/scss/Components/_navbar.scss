@@ -5,19 +5,32 @@
     height: 86px;
     padding: 0 90px;
 
-    @media #{$laptop-device} {
+    @media #{$lg} {
       max-width: 1440px;
       margin-inline: auto;
+    }
+
+    @media #{$sm} {
+      height: 65px;
+      padding: 0 20px;
     }
 
     .company-logo {
       width: 209px;
       height: 38px;
+
+      @media #{$sm} {
+        width: 190px;
+      }
     }
 
     .nav-links {
       display: flex;
       align-items: center;
+
+      @media #{$sm} {
+        display: none;
+      }
 
       a {
         display: flex;
@@ -30,6 +43,11 @@
         height: 20px;
         color: #707070;
 
+        @media #{$md} {
+          width: 70.5px;
+          font-size: 12px;
+        }
+
         &.active {
           color: #111010;
         }
@@ -39,17 +57,33 @@
         }
       }
     }
+  }
+  .get-btn {
+    width: 136px;
+    height: 30px;
+    background-color: #ef001c;
+    font-family: var(--font-style);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
 
-    .get-btn {
-      width: 136px;
-      height: 30px;
-      background-color: #ef001c;
-      font-family: var(--font-style);
-      font-size: 14px;
-      font-weight: 600;
-      line-height: 20px;
-      text-align: center;
-      color: #ffffff;
+    @media #{$md} {
+      font-size: 12px;
+      width: 100px;
+    }
+  }
+
+  .mobile-menu {
+    display: none;
+
+    @media #{$md} {
+      display: block;
+      position: absolute;
+      background-color: #ffffff;
+      width: 100%;
+      display: flex;
     }
   }
 }

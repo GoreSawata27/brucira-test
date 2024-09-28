@@ -9,4 +9,19 @@
   color: #ffffff;
   display: flex;
   align-items: center;
+
+  @media #{$sm} {
+    height: 136px;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 74px;
+    letter-spacing: 2px;
+  }
+
+  .divider {
+    padding: 0 40px;
+    @media #{$sm} {
+      padding: 0 20px;
+    }
+  }
 }

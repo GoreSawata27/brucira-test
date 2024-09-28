@@ -9,7 +9,7 @@ export default function StatsSection() {
           <h3 className="global-title">WE ARE GLOBAL</h3>
         </div>
 
-        <div className="grid grid-cols-2 gap-8 text-start md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-8 stats-counts-container text-start sm:grid-cols-2 md:grid-cols-4">
           <div>
             <h4 className="stats-count">
               60<span className="plus">+</span>

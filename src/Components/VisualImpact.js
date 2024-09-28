@@ -5,7 +5,7 @@ export default function VisualImpact() {
   return (
     <div className="visual-impact">
       <Marquee speed={50} gradient={false}>
-        Unleash Visual Impact <span className="mr-14 "></span> |
+        Unleash Visual Impact<span className="divider">|</span>
       </Marquee>
     </div>
   );
