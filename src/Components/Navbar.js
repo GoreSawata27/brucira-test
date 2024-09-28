@@ -29,7 +29,7 @@ export default function Navbar() {
           </a>
           <button className="rounded-full get-btn">GET STARTED</button>
         </nav>
-        <button className="md:hidden" onClick={toggleMobileMenu}>
+        <button className="mobile-menu-btn" onClick={toggleMobileMenu}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
