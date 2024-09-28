@@ -9,16 +9,17 @@
 
   .stats-counts-container {
     @media #{$sm} {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr;
       gap: 30px;
+      place-items: center;
     }
+
     @media #{$md} {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      place-items: center;
     }
   }
 
