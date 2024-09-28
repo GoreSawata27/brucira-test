@@ -10,8 +10,10 @@
       margin-inline: auto;
     }
 
+    @media #{$md} {
+      padding: 0 50px;
+    }
     @media #{$sm} {
-      height: 65px;
       padding: 0 20px;
     }
 
@@ -20,7 +22,7 @@
       height: 38px;
 
       @media #{$sm} {
-        width: 190px;
+        width: 180px;
       }
     }
 
@@ -28,7 +30,7 @@
       display: flex;
       align-items: center;
 
-      @media #{$sm} {
+      @media #{$md} {
         display: none;
       }
 
@@ -74,7 +76,12 @@
       width: 100px;
     }
   }
-
+  .mobile-menu-btn {
+    display: none;
+    @media #{$md} {
+      display: block;
+    }
+  }
   .mobile-menu {
     display: none;
 

@@ -14,7 +14,6 @@ body {
 }
 
 body {
-  font-family: var(--font-style);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
   text-rendering: optimizeSpeed;
@@ -30,17 +29,15 @@ textarea {
   resize: none !important;
 }
 
-.bt {
-  border: 1px solid red;
-}
-
 section {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 90px;
 
+  @media #{$md} {
+    padding: 0 50px;
+  }
   @media #{$sm} {
     padding: 0 20px;
-    margin: 8px 0;
   }
 }
