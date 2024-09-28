@@ -2,6 +2,26 @@
   margin: 100px 0;
   margin-bottom: 130px;
 
+  @media #{$sm} {
+    margin: 70px 0;
+    margin-bottom: 80px;
+  }
+
+  .stats-counts-container {
+    @media #{$sm} {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    @media #{$md} {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+    }
+  }
+
   & > div:first-child {
     margin-bottom: 30px;
   }
@@ -12,38 +32,38 @@
   }
   .global-title {
     font-family: var(--font-style);
-    font-size: 20px;
+    font-size: 1.125rem;
+    font-size: clamp(1.125rem, 1.0921052631578947rem + 0.17543859649122806vw, 1.25rem);
     font-weight: 600;
     line-height: 27.24px;
     letter-spacing: 0.06em;
-
     color: #ef001c;
   }
 
   .stats-count {
     font-family: var(--font-style-Everett);
-    font-size: 86px;
+    font-size: 3rem;
+    font-size: clamp(3rem, 2.375rem + 3.3333333333333335vw, 5.375rem);
     font-weight: 600;
     line-height: 88px;
     letter-spacing: -0.03em;
 
-    .plus {
-      font-family: var(--font-style-Everett);
-      font-size: 86px;
-      font-weight: 600;
-      line-height: 88px;
-      letter-spacing: -0.03em;
+    @media #{$sm} {
+      display: flex;
+      justify-content: center;
+    }
 
+    .plus {
       color: #ef001c;
     }
   }
   .title {
     max-width: 200px;
     font-family: var(--font-style-Everett);
-    font-size: 24px;
+    font-size: 1.125rem;
+    font-size: clamp(1.125rem, 1.0263157894736843rem + 0.5263157894736842vw, 1.5rem);
     font-weight: 600;
     line-height: 28px;
-
     color: #111010;
   }
 }

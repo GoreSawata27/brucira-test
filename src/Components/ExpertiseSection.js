@@ -11,7 +11,7 @@ export default function ExpertiseSection() {
   };
   return (
     <section>
-      <div className="expertise">
+      <div className="expertise-container">
         <h2>
           Our expertise and passion <br />
           breathe life into your narratives
@@ -26,9 +26,9 @@ export default function ExpertiseSection() {
             <div className="flex accordian-img ">
               <img
                 src={partnersOne}
-                alt="People clapping"
+                alt="lady "
                 className="rounded-lg "
-                style={{ maxWidth: "400px" }}
+                // style={{ maxWidth: "400px" }}
               />
             </div>
           )}
@@ -36,9 +36,9 @@ export default function ExpertiseSection() {
             <div className="flex accordian-img ">
               <img
                 src={videoPreview}
-                alt="People clapping"
+                alt="third  "
                 className="rounded-lg "
-                style={{ maxWidth: "400px" }}
+                // style={{ maxWidth: "400px" }}
               />
             </div>
           )}
@@ -55,18 +55,12 @@ export default function ExpertiseSection() {
                     onClick={() => toggleAccordion(0)}
                   >
                     <span>
-                      {activeIndex !== 0 && (
-                        <span className="accordian-main-title ">
-                          Innovative
-                        </span>
-                      )}
+                      {activeIndex !== 0 && <span className="accordian-main-title ">Innovative</span>}
                     </span>
                   </div>
                   <div
                     className={`transition-max-height duration-500 ease-in-out overflow-hidden ${
-                      activeIndex === 0
-                        ? "max-h-96 acccprdian-border-bottom "
-                        : "max-h-0"
+                      activeIndex === 0 ? "max-h-96 acccprdian-border-bottom " : "max-h-0"
                     }`}
                   >
                     {activeIndex === 0 && (
@@ -74,9 +68,8 @@ export default function ExpertiseSection() {
                         <span className="block accordian-number">01</span>
                         <span className="accordian-title">Innovative</span>
                         <p className="accordian-info">
-                          Creation, ensuring your messages resonate worldwide.
-                          From concept to distribution, our platform serves as
-                          your strategic partner.
+                          Creation, ensuring your messages resonate worldwide. From concept to distribution,
+                          our platform serves as your strategic partner.
                         </p>
                       </div>
                     )}
@@ -91,17 +84,11 @@ export default function ExpertiseSection() {
                     }`}
                     onClick={() => toggleAccordion(1)}
                   >
-                    <span>
-                      {activeIndex !== 1 && (
-                        <span className="accordian-main-title">Reliable</span>
-                      )}
-                    </span>
+                    <span>{activeIndex !== 1 && <span className="accordian-main-title">Reliable</span>}</span>
                   </div>
                   <div
                     className={`transition-max-height duration-500 ease-in-out overflow-hidden ${
-                      activeIndex === 1
-                        ? "max-h-96 acccprdian-border-bottom"
-                        : "max-h-0"
+                      activeIndex === 1 ? "max-h-96 acccprdian-border-bottom" : "max-h-0"
                     }`}
                   >
                     {activeIndex === 1 && (
@@ -109,9 +96,8 @@ export default function ExpertiseSection() {
                         <span className="block accordian-number">02</span>
                         <span className="accordian-title">Reliable</span>
                         <p className="accordian-info">
-                          Creation, ensuring your messages resonate worldwide.
-                          From concept to distribution, our platform serves as
-                          your strategic partner.
+                          Creation, ensuring your messages resonate worldwide. From concept to distribution,
+                          our platform serves as your strategic partner.
                         </p>
                       </div>
                     )}
@@ -126,17 +112,11 @@ export default function ExpertiseSection() {
                     }`}
                     onClick={() => toggleAccordion(2)}
                   >
-                    <span>
-                      {activeIndex !== 2 && (
-                        <span className="accordian-main-title">Quality</span>
-                      )}
-                    </span>
+                    <span>{activeIndex !== 2 && <span className="accordian-main-title">Quality</span>}</span>
                   </div>
                   <div
                     className={`transition-max-height duration-500 ease-in-out overflow-hidden ${
-                      activeIndex === 2
-                        ? "max-h-96 acccprdian-border-bottom "
-                        : "max-h-0"
+                      activeIndex === 2 ? "max-h-96 acccprdian-border-bottom " : "max-h-0"
                     }`}
                   >
                     {activeIndex === 2 && (
@@ -144,9 +124,8 @@ export default function ExpertiseSection() {
                         <span className="block accordian-number">03</span>
                         <span className="accordian-title">Quality</span>
                         <p className="accordian-info">
-                          Creation, ensuring your messages resonate worldwide.
-                          From concept to distribution, our platform serves as
-                          your strategic partner.
+                          Creation, ensuring your messages resonate worldwide. From concept to distribution,
+                          our platform serves as your strategic partner.
                         </p>
                       </div>
                     )}

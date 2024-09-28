@@ -58,25 +58,20 @@ const Gallery = () => {
           <div className="flex items-end justify-between ">
             <div className="frame-role">
               <div className="frame-title">
-                {frames[index].title},
-                <span className="frame-company">{frames[index].company}</span>
+                {frames[index].title},<span className="frame-company">{frames[index].company}</span>
               </div>
               <div className="frame-role-title">{frames[index].role}</div>
             </div>
             <div className="button-container">
               <button
-                className={`flex items-center justify-center prev ${
-                  index === 0 && "cursor-not-allowed "
-                }`}
+                className={`flex items-center justify-center prev ${index === 0 && "cursor-not-allowed "}`}
                 onClick={prev}
                 disabled={index < 1}
               >
                 <img src={leftArrow} alt="left Arrow" />
               </button>
               <button
-                className={`flex items-center justify-center next ${
-                  index === 2 && "cursor-not-allowed "
-                }`}
+                className={`flex items-center justify-center next ${index === 2 && "cursor-not-allowed "}`}
                 onClick={next}
                 disabled={index > 2}
               >

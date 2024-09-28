@@ -15,20 +15,10 @@
   --max-width: 1440px;
 }
 
-// Desktop (1660px)
-$laptop-device: "only screen and (min-width: 1440px)";
-
-// Desktop (1440px)
-$laptop-device: "only screen and (min-width: 1440px)";
-
+$lg: "only screen and (min-width: 1440px)";
 // Tablet
-$tablet-device: "only screen and (min-width: 768px) and (max-width: 1439px)";
-
+$md: "only screen and (max-width: 1024px)";
 // Mobile
-$mobile-device: "only screen and (max-width: 767px)";
-$large-mobile: "only screen and (max-width: 575px)";
-$small-mobile: "only screen and (max-width: 479px)";
+$sm: "only screen and (max-width: 767px)";
 
-// @media #{$small-mobile} {
-//   width: 100px;
-// }
+// @media #{$sm} {}

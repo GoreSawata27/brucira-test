@@ -1,4 +1,4 @@
-.contact-Section-container {
+.contact-container {
   background-color: #f1f2f6;
   min-height: 723px;
   padding: 60px 0;
@@ -7,14 +7,36 @@
     max-width: 1440px;
     padding: 0 90px;
     margin: 0 auto;
+
+    @media #{$md} {
+      display: flex;
+      justify-content: center;
+      padding: 20px 0;
+    }
+
+    .contact-Section-box {
+      @media #{$sm} {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+      }
+    }
   }
+
   .contact-section-heading {
     font-family: var(--font-style-Everett);
-    font-size: 64px;
+    font-size: 2rem;
+    font-size: clamp(2rem, 1.473684210526316rem + 2.807017543859649vw, 4rem);
     font-weight: 600;
     line-height: 68px;
+    @media #{$sm} {
+      line-height: 32px;
 
-    span {
+      .breaker {
+        display: inline;
+      }
+    }
+    .red {
       color: #ef001c;
     }
   }
@@ -26,6 +48,14 @@
     max-width: 290px;
     min-height: 211px;
     padding-left: 30px;
+    @media #{$sm} {
+      padding-left: 10px;
+    }
+    .contacts-container {
+      display: flex;
+      border: 1px solid red;
+      gap: 40px;
+    }
 
     .contact-card-title {
       font-family: var(--font-style-Everett);
@@ -44,7 +74,6 @@
       font-weight: 400;
       line-height: 19px;
       letter-spacing: -0.004em;
-
       color: #1e1f1fb2;
     }
   }
@@ -55,6 +84,9 @@
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
+    @media #{$sm} {
+      max-width: 300px;
+    }
 
     .contact-form-title {
       font-family: var(--font-style);
@@ -93,5 +125,10 @@
     font-weight: 700;
     line-height: 20px;
     color: #ffffff;
+
+    @media #{$sm} {
+      max-width: 300px;
+      margin-top: 20px;
+    }
   }
 }
